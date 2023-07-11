@@ -1,0 +1,56 @@
+bedrock:
+  address: $BEDROCK_ADDRESS
+  port: $BEDROCK_PORT
+  clone-remote-port: $BEDROCK_CLONE_REMOTE_PORT
+  motd1: $BEDROCK_MOTD1
+  motd2: $BEDROCK_MOTD2
+  server-name: $BEDROCK_SERVER_NAME
+  compression-level: $BEDROCK_COMPRESSION_LEVEL
+  enable-proxy-protocol: $BEDROCK_ENABLE_PROXY_PROTOCOL
+remote:
+  address: $REMOTE_ADDRESS
+  port: $REMOTE_PORT
+  auth-type: $REMOTE_AUTH_TYPE
+  allow-password-authentication: $REMOTE_ALLOW_PASSWORD_AUTHENTICATION
+  use-proxy-protocol: $REMOTE_USE_PROXY_PROTOCOL
+  forward-hostname: $REMOTE_FORWARD_HOSTNAME
+floodgate-key-file: $FLOODGATE_KEY_FILE
+saved-user-logins: 
+    $SAVED_USER_LOGINS
+pending-authentication-timeout: $PENDING_AUTHENTICATION_TIMEOUT
+command-suggestions: $COMMAND_SUGGESTIONS
+passthrough-motd: $PASSTHROUGH_MOTD
+passthrough-protocol-name: $PASSTHROUGH_PROTOCOL_NAME
+passthrough-player-counts: $PASSTHROUGH_PLAYER_COUNTS
+legacy-ping-passthrough: $LEGACY_PING_PASSTHROUGH
+ping-passthrough-interval: $PING_PASSTHROUGH_INTERVAL
+forward-player-ping: $FORWARD_PLAYER_PING
+max-players: $MAX_PLAYERS
+debug-mode: $DEBUG_MODE
+allow-third-party-capes: $ALLOW_THIRD_PARTY_CAPES
+allow-third-party-ears: $ALLOW_THIRD_PARTY_EARS
+show-cooldown: $SHOW_COOLDOWN
+show-coordinates: $SHOW_COORDINATES
+disable-bedrock-scaffolding: $DISABLE_BEDROCK_SCAFFOLDING
+always-quick-change-armor: $ALWAYS_QUICK_CHANGE_ARMOR
+emote-offhand-workaround: $EMOTE_OFFHAND_WORKAROUND
+cache-images: $CACHE_IMAGES
+allow-custom-skulls: $ALLOW_CUSTOM_SKULLS
+max-visible-custom-skulls: $MAX_VISIBLE_CUSTOM_SKULLS
+custom-skull-render-distance: $CUSTOM_SKULL_RENDER_DISTANCE
+add-non-bedrock-items: $ADD_NON_BEDROCK_ITEMS
+above-bedrock-nether-building: $ABOVE_BEDROCK_NETHER_BUILDING
+force-resource-packs: $FORCE_RESOURCE_PACKS
+xbox-achievements-enabled: $XBOX_ACHIEVEMENTS_ENABLED
+log-player-ip-addresses: $LOG_PLAYER_IP_ADDRESSES
+notify-on-new-bedrock-update: $NOTIFY_ON_NEW_BEDROCK_UPDATE
+unusable-space-block: $UNUSABLE_SPACE_BLOCK
+metrics:
+  enabled: $METRICS_ENABLED
+  uuid: $METRICS_UUID
+scoreboard-packet-threshold: $SCOREBOARD_PACKET_THRESHOLD
+enable-proxy-connections: $ENABLE_PROXY_CONNECTIONS
+mtu: $MTU
+use-direct-connection: $USE_DIRECT_CONNECTION
+disable-compression: $DISABLE_COMPRESSION
+config-version: $CONFIG_VERSION
