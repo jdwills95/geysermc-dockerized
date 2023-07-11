@@ -6,7 +6,7 @@ RUN curl -L -o gesyer.jar https://download.geysermc.org/v2/projects/geyser/versi
 
 COPY ./config.template.yml /config.template.yml
 
-EXPOSE ${BEDROCK_PORT}/udp
+EXPOSE 19132/udp
 
 RUN envsubst < /config.template.yml > /config.yml
 
