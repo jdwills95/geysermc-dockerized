@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-git fetch --tags # checkout action does not get these
+git tag # checkout action does not get these
 
 # -v:refname is a version sort
 oldv=$(git tag --sort=-v:refname --list "v[0-9]*" | head -n 1)
