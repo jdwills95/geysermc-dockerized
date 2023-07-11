@@ -1,6 +1,6 @@
 bedrock:
   address: $BEDROCK_ADDRESS
-  port: $BEDROCK_PORT
+  port: 19132
   clone-remote-port: $BEDROCK_CLONE_REMOTE_PORT
   motd1: $BEDROCK_MOTD1
   motd2: $BEDROCK_MOTD2
