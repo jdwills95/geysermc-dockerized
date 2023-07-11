@@ -8,4 +8,6 @@ RUN apk update && apk add bash && apk add curl && apk add gettext
 
 EXPOSE 19132/udp
 
-ENTRYPOINT  cp /config/config.yml / && envsubst < /config.template.yml > /config.yml && curl -L -o gesyer.jar https://download.geysermc.org/v2/projects/geyser/versions/2.1.1/builds/227/downloads/standalone && java -jar /gesyer.jar
+#envsubst < /config.template.yml > /config.yml
+
+ENTRYPOINT  cp /config/config.yml / && curl -L -o gesyer.jar https://download.geysermc.org/v2/projects/geyser/versions/2.1.1/builds/227/downloads/standalone && java -jar /gesyer.jar
