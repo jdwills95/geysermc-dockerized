@@ -8,6 +8,4 @@ COPY ./config.template.yml /config.template.yml
 
 EXPOSE 19132/udp
 
-RUN envsubst < /config.template.yml > /config.yml
-
-CMD ["java", "-jar", "/gesyer.jar"]
+ENTRYPOINT  envsubst < /config.template.yml > /config.yml && java -jar /gesyer.jar
