@@ -16,6 +16,7 @@ jobs:
           git fetch --tags
           wget -O - https://raw.githubusercontent.com/jdwills95/geysermc-dockerized/main/bump/gitbump.sh | bash
           echo "VERSION=$(git tag --sort=-v:refname --list "v[0-9]*" | head -n 1)" >> $GITHUB_ENV
+          echo Docker Version Tag $VERSION
       - name: Checkout
         uses: actions/checkout@v3
       - name: Login to Docker Hub
