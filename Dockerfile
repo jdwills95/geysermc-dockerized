@@ -1,4 +1,4 @@
-FROM openjdk:19-jdk-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 RUN apk update && apk add bash && apk add curl && apk add gettext
 
