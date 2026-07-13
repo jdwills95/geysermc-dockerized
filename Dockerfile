@@ -10,4 +10,4 @@ EXPOSE 19132/udp
 
 #envsubst < /config.template.yml > /config.yml
 
-ENTRYPOINT ["/bin/bash", "-c", "if [ -f /config/config.yml ]; then cp /config/config.yml /config.yml; else envsubst < /config.template.yml > /config.yml; fi && curl -L -o gesyer.jar https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar && java -jar /gesyer.jar"]
+ENTRYPOINT ["/bin/bash", "-c", "if [ -f /config/config.yml ]; then cp /config/config.yml /config.yml; else envsubst < /config.template.yml > /config.yml; fi && curl -L -o geyser.jar https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone && java -jar /geyser.jar"]
